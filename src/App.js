@@ -3,6 +3,7 @@ import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import About from './components/About';
+import Resume from './components/Resume';
 
 function App() {
   const [current, setCurrent] = useState('About');
@@ -11,7 +12,8 @@ function App() {
     switch(current) {
       case 'About':
         return <About/>;
-        break;
+      case 'Resume':
+        return <Resume/>;
     }
   }
   return (
