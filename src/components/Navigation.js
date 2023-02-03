@@ -9,7 +9,7 @@ export default function Navigation(props) {
         <nav>
             <ul>
                 <li>
-                    <a href='#about'
+                    <a href='#About'
                     onClick={() => setCurrent("About")}
                     className={current === "About" ? "nav-link active" : "nav-link"}
                     >
@@ -17,7 +17,7 @@ export default function Navigation(props) {
                     </a>
                 </li>
                 <li>
-                    <a href='#portfolio'
+                    <a href='#Portfolio'
                     onClick={() => setCurrent("Portfolio")}
                     className={current === "Portfolio" ? "nav-link active" : "nav-link"}
                     >
@@ -25,7 +25,7 @@ export default function Navigation(props) {
                     </a>
                 </li>
                 <li>
-                    <a href='#contact'
+                    <a href='#Contact'
                     onClick={() => setCurrent("Contact")}
                     className={current === "Contact" ? "nav-link active" : "nav-link"}
                     >
@@ -33,7 +33,7 @@ export default function Navigation(props) {
                     </a>
                 </li>
                 <li>
-                    <a href='#resume'
+                    <a href='#Resume'
                     onClick={() => setCurrent("Resume")}
                     className={current === "Resume" ? "nav-link active" : "nav-link"}
                     >
