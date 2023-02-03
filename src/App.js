@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import About from './components/About';
 import Resume from './components/Resume';
+import Contact from './components/Contact';
 
 function App() {
   const [current, setCurrent] = useState('About');
@@ -14,6 +15,8 @@ function App() {
         return <About/>;
       case 'Resume':
         return <Resume/>;
+      case 'Contact':
+        return <Contact/>;
     }
   }
   return (
