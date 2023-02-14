@@ -6,7 +6,7 @@ import marvelite from '../assets/marvelite.png';
 import weather from '../assets/weather.png';
 import codeQuiz from '../assets/code-quiz.png';
 
-const Project = () => {
+export default function Project () {
     const [projects] = useState([
         {
             name: "Just Another Text Editor",
@@ -48,7 +48,22 @@ const Project = () => {
 
     return (
         <div>
+            <div>
             <h2>Portfolio</h2>
+            </div>
+            <div>
+                {projects.map((project, i) => (
+                    <div key={i}>
+                        <a href={project.deployed}>
+                            <img src={project.image}/>
+                        </a>
+                        <div>
+                            {project.name}
+                            <a href={project.repo}> Check out this project's repository here</a>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
-    )
-}
+    );
+};
