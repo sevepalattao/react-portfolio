@@ -9,7 +9,7 @@ import codeQuiz from '../assets/code-quiz.png';
 export default function Project () {
     const [projects] = useState([
         {
-            name: "Just Another Text Editor",
+            name: "PWA Text Editor",
             image: JATE,
             repo: 'https://github.com/sevepalattao/PWATextEditor',
             deployed: 'https://pwa-texteditor-sevep.herokuapp.com/',
@@ -47,23 +47,23 @@ export default function Project () {
     ]);
 
     return (
-        <div>
-            <div>
+        <section className='sections'>
             <h2>Portfolio</h2>
-            </div>
-            <div>
+            <div className='section-content'>
                 {projects.map((project, i) => (
-                    <div key={i}>
+                  <div className='wrapper'>
+                    <div className ='container' key={i}>
                         <a href={project.deployed}>
                             <img src={project.image}/>
                         </a>
-                        <div>
-                            {project.name}
+                        <div className='Project'>
+                            {project.name} - 
                             <a href={project.repo}> Check out this project's repository here</a>
                         </div>
                     </div>
+                  </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
