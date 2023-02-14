@@ -33,7 +33,7 @@ export default function Contact() {
     }
 
     return (
-        <div>
+        <section className="sections contact">
             <h2>Contact Me</h2>
             <form className="contact-form" onSubmit={handleSubmit}>
                 <div>
@@ -46,14 +46,14 @@ export default function Contact() {
                 </div>
                 <div>
                 <textarea type='text' rows='5' placeholder='Message' value={inputs.message} name='Message'
-                className="contact-name" onBlur={handleChange}></textarea>
+                className="contact-message" onBlur={handleChange}></textarea>
                 </div>
-                <div>
-                    {error}
-                </div>
+                    <div>
+                        <p className="error">{error}</p>
+                    </div>
                 <button type='submit'>Submit</button>
             </form>
 
-        </div>
+        </section>
     )
 }

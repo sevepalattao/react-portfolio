@@ -131,3 +131,39 @@ footer a {
 .Project a {
   color: white
 }
+
+.error {
+  margin: 5px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form {
+  width: 50%;
+}
+.contact-name {
+  width: 100%;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.contact-email {
+  width: 100%;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.contact-message {
+  width: 100%;
+  font-size: 15px;
+}
+
+.contact button {
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  width: 20%;
+}
