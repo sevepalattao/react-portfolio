@@ -15,7 +15,9 @@ export default function About() {
                 Upon graduation, I enrolled in the coding and web development boot-camp through
                 the U of M. I made this decision because I majored in Management Information 
                 Systems, and I became interested in programming but did not want to switch my 
-                major and stay in school. 
+                major and stay in school. I graduate from the bootcamp in February of 2023, and 
+                after that I am looking for a full time software development role.
+                <br/>
                 <br/>
                 I am an aspiring web developer interested in video games, sports, and technology.
                 I love solving problems and learning new things, especially new technologies. 
