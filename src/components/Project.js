@@ -52,14 +52,14 @@ export default function Project () {
             <div className='section-content'>
                 {projects.map((project, i) => (
                   <div className='wrapper'>
+                    <div className='Project'>
+                        {project.name} - 
+                        <a href={project.repo}> Check out this project's repository here</a>
+                    </div>
                     <div className ='container' key={i}>
                         <a href={project.deployed}>
                             <img src={project.image}/>
                         </a>
-                        <div className='Project'>
-                            {project.name} - 
-                            <a href={project.repo}> Check out this project's repository here</a>
-                        </div>
                     </div>
                   </div>
                 ))}

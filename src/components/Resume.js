@@ -2,13 +2,11 @@ import React from "react";
 
 export default function Resume() {
     return (
-        <div>
-            <div>
-            <h1>
+        <section className="sections">
+            <h2>
                 Resume
-            </h1>
-            </div>
-            <a href= 'https://docs.google.com/document/d/1mttkYUmyP3me1GoNy7mgLuGyRvOmRL4tJhtOFvfUfrM/' download='SevePalattaoResume'>
+            </h2>
+            <a className='Resume' href= 'https://docs.google.com/document/d/1mttkYUmyP3me1GoNy7mgLuGyRvOmRL4tJhtOFvfUfrM/' download='SevePalattaoResume'>
             Check out my Resume here
             </a>
             <div>
@@ -67,6 +65,6 @@ export default function Resume() {
                     </li>
                 </ul>
             </div>
-        </div>
+        </section>
     );
 }

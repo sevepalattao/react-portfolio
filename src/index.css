@@ -128,6 +128,9 @@ footer a {
   filter: grayscale(0);
 }
 
+.Project {
+  margin: 15px 0px 15px 10px;
+}
 .Project a {
   color: white
 }
@@ -166,4 +169,8 @@ footer a {
   background-color: white;
   color: black;
   width: 20%;
+}
+
+.Resume {
+  color: white;
 }
